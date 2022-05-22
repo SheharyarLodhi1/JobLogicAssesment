@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JobLogic</string>
+    <string name="calllist">CalLList</string>
+    <string name="buy_list">Buy List</string>
+    <string name="sell_list">Sell List</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+</resources>

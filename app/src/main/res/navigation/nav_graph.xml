@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mHomeScreenFragment">
+
+    <fragment
+        android:id="@+id/mHomeScreenFragment"
+        android:name="com.sheharyar.joblogic.ui.HomeScreenFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+       <!-- <action
+            android:id="@+id/action_mHomeScreenFragment_to_mBuyListFragment"
+            app:destination="@id/mBuyListFragment" />
+        <action
+            android:id="@+id/action_mHomeScreenFragment_to_mSellListFragment"
+            app:destination="@id/mSellListFragment" />
+        <action
+            android:id="@+id/action_mHomeScreenFragment_to_mCallListFragment"
+            app:destination="@id/mCallListFragment" />-->
+
+    </fragment>
+    <fragment
+        android:id="@+id/mBuyListFragment"
+        android:name="com.sheharyar.joblogic.ui.FragmentBuyList"
+        android:label="Buy Details"
+        tools:layout="@layout/fragment_buy_list">
+        <!--<action
+            android:id="@+id/action_nyNewsFragment_to_nyNewsDetailsFragment"
+            app:destination="@id/mSellListFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/mCallListFragment"
+        android:name="com.sheharyar.joblogic.ui.FragmentCallList"
+        android:label="Call List"
+        tools:layout="@layout/fragment_call_list">
+       <!-- <action
+            android:id="@+id/action_nyNewsFragment_to_nyNewsDetailsFragment"
+            app:destination="@id/mSellListFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/mSellListFragment"
+        android:name="com.sheharyar.joblogic.ui.FragmentSellList"
+        android:label="Sell List"
+        tools:layout="@layout/fragment_sell_list" />
+
+
+</navigation>
